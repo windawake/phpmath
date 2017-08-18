@@ -5,17 +5,15 @@
  * Date: 2017/1/27 0027
  * Time: 13:11
  */
-include __DIR__."/autoload.php";
-use Number\Positive;
-use Number\Negative;
+include __DIR__ . "/autoload.php";
 use Number\Integer;
-use Number\Fraction;
-use Number\Zero;
-use Number\PosInteger;
 use Number\Natural;
+use Number\PosInteger;
+use Number\Positive;
+use Number\Zero;
 
 $number = new Number(0.5);
-//echo $number->getValue();
+echo $number->getValue();exit;
 
 $positive = new Positive();
 $integer = new Integer();
@@ -30,4 +28,3 @@ $zero = new Zero();
 $number->shrink($natural);
 
 var_dump($number->getResult());exit;
-
